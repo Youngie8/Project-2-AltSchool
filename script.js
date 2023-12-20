@@ -1,12 +1,13 @@
-const username = prompt("Please Enter your Username",);
+let username = prompt("Please Enter your Username",);
 const password = prompt("Please Enter a password!");
 const confirmPassword = prompt("Please confirm your password!");
+
 function validateUser() {
     // Validate user details
-    if (username.length >= 10) {
-        alert("Username must be less than 10 characters!");
+    if (username.length >= 10 || username == null) {
+        alert("Username must be less than 10 characters and have a character at least!");
         return false;
-    } else if (password.length <= 6) {
+    } else if (password.length <= 6 || password == null) {
         alert("Password must be greater than 6 characters!");
         return false;
     } else if (password !== confirmPassword) {
