@@ -21,7 +21,7 @@ function validateUser() {
     };
 
     // Display user details in paragraph element
-    document.getElementById("user_name").innerText = JSON.stringify("UserName: " + user.username);
+    document.getElementById("user_name").innerText = JSON.stringify("Username: " + user.username);
     document.getElementById("user_password").innerText = JSON.stringify("Password: " + user.password);
 
     return true;
